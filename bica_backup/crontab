@@ -1,0 +1,4 @@
+# Run backup with cleanup at 03:00 every day
+0 3 * * * /bin/bash -c 'cd /bica_backup && source .env && /usr/local/bin/python backup.py cleanup >> /var/log/cron.log 2>> /var/log/cron_error.log'
+# Run backup without cleanup at 14:00 every day
+0 14 * * * /bin/bash -c 'cd /bica_backup && source .env && /usr/local/bin/python backup.py >> /var/log/cron.log 2>> /var/log/cron_error.log'
