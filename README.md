@@ -1,4 +1,4 @@
-### 📁 Database Backup System
+### 📁 Automatic PostgreSQL Database Backup System
 
 ---
 
